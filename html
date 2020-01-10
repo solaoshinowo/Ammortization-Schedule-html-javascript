@@ -1,0 +1,50 @@
+<!--
+    
+-->
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+    <title>Loan Ammortization </title>
+    <script language="JavaScript" type="text/javascript"
+            src="amort1.js"></script>
+</head>
+<body>
+    <h1>Loan Amortization Table</h1>
+    <h5></h5>
+    <hr>
+    <form>
+        <fieldset>
+            <legend>Inputs</legend>
+            <label for="principal"><b>Principal:</b></label>
+            <input type="text" id="principal" />
+            <br />
+            <label for="interest"><b>Interest:</b></label>
+            <input type="text" id="interest" />
+            <br />
+            <label for="terms"><b>Terms:</b></label>
+            <input type="text" id="terms" />
+
+            <br />
+            <input type="button" value="Calculate" onclick="getValues()" />
+        </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend>Outputs</legend>
+            <div id="Result"></div>
+        </fieldset>
+    </form>
+</body>
+</html>
+<script language="javascript">
+<!--
+
+    var wwOpenInstalled;
+    if (wwOpenInstalled || parent.wwOpenInstalled) {
+        if (window.Event) {
+            document.captureEvents(Event.MOUSEUP);
+        }
+        document.onmouseup = (parent.wwOpenInstalled) ? parent.wwOnMouseUp : wwOnMouseUp;
+    }
+//--></script>
